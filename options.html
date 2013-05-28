@@ -1,0 +1,28 @@
+<html>
+<head><title>TP's Bitcoin Quick Payments</title></head>
+
+<body>
+	<p align="center">This extension will be using your blockchain.info wallet to let you quickly send Bitcoin payments.</br>
+	Your identifier will be stored for ease of use.</br>
+	You can also input your password now to fetch all addresses associated with your identifier from blockchain.</br>
+	We encourage you use two factor authentication to secure your wallet.</p>
+	<p align="center">You can also input your addresses manually in the text area lower.</p>
+	<p align="center">Please input your Blockchain.info wallet identifier (this information will be stored):</p>
+	<p align="center"><input type="text" id="identifier" size=40 value="35ca0fdb-74c1-76b5-b4ec-cc64dc0e8cf1"></input></p>
+	<p align="center">Please input your password if you wish to fetch your addresses (the password will not be saved):</p>
+	<p align="center"><input type="password" id="password" size=40></input></p>
+	<div align="center" id="status"></div>
+	<p align="center"><button id="save">Save</button></p>
+	
+	
+	<p align="center">Please input addresses you are interested in.<br>One per line, no punctuation marks please.</p>
+	<p align="center"><textarea id="addresses" rows="10" cols="40" value=""></textarea></p>
+	<div align="center" id="status"></div>
+	<p align="center"><button id="save2">Save</button></p>
+</body>
+
+<script src="bitcoinjs-min.js"></script>
+<script src="BitcoinAddress.js"></script>
+<script src="options.js"></script>
+
+</html>
