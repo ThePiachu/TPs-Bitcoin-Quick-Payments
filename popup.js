@@ -57,8 +57,8 @@ function scour() {
 
 function clearPassword()
 {
-	document.getElementById("password")=.value="";
-	document.getElementById("2factor")=.value="";
+	document.getElementById("password").value="";
+	document.getElementById("2factor").value="";
 }
 
 function setNotice(notice)
